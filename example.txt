@@ -1,0 +1,33 @@
+VAR a := 6
+VAR b:= 6
+VAR c := 20
+
+
+WRITE("IF output:")
+IF a = 5 AND b <> 5 THEN WRITE(c) ELSE WRITE(c+5)
+
+
+FUNCTION upArray(elements, numbers)
+BEGIN
+FOR i := 0 TO numbers THEN
+BEGIN
+APPEND(elements, i)
+END
+RETURN elements
+END
+
+VAR empArray := []
+
+VAR newArray := upArray (empArray, 5)
+
+WRITE("Array output:")
+WRITE(newArray)
+
+VAR a := 10
+
+WRITE("FOR output:")
+FOR i:= 5 TO a THEN
+BEGIN
+VAR c := i * i
+WRITE(c)
+END
